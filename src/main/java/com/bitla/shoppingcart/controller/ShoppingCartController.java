@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.view.RedirectView;
 
 import com.bitla.shoppingcart.enums.Discounts;
 import com.bitla.shoppingcart.enums.FinalCheckOutDetails;
@@ -40,15 +41,12 @@ public class ShoppingCartController {
 		// ● buy one, get one free on Apples
 		Discounts apple = new Discounts(Items.APPLE, 1, 1, "buy one, get one free on Apples", new BigDecimal(1.00));
 		discounts.add(apple);
-
-		/*
-		 * userItems.put("ORANGE", 4); userItems.put("APPLE", 5);
-		 */
 	}
+	
 
 	@GetMapping("/")
-	public String getinit() {
-		return "working";
+	public RedirectView getinit() {
+		return new RedirectView("home.html");
 	}
 
 	@DeleteMapping("/clear")
