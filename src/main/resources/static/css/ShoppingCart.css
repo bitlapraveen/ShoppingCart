@@ -1,0 +1,31 @@
+.button {
+	height: fit-content;
+    border-radius: 41px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+	background-color: RoyalBlue;
+}
+
+.list-item {
+	border: 1px solid;
+}
+
+.card {
+	height: 90%;
+}
+
+img {
+	width: 18%;
+}
+
+.list {
+	border-bottom: 1px solid;
+}
+
+.right {
+	position: absolute;
+	right: 0%;
+	padding-right: 3%;
+}
