@@ -1,4 +1,4 @@
-package com.example.coastal;
+package com.bitla.shoppingcart.controller.test;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
