@@ -32,12 +32,11 @@ function increaseCount(itemType) {
 	var applesCount = parseInt($('#appleItemCount').text());
 	if (itemType === 'ORANGE') {
 		oranges = ++orangeCount;
-		var  orangesText = ' ' + oranges + ' ';
-		$('#orangeItemCount').text(orangesText);
+		$('#orangeItemCount').text(oranges);
 	}
 	if (itemType === 'APPLE') {
-		var  appleText = ' '+apples+' ';
-		$('#appleItemCount').text(appleText);
+		apples = ++applesCount;
+		$('#appleItemCount').text(apples);
 	}
 	cartCountUpdate(apples, oranges);
 }
@@ -47,15 +46,13 @@ function decreaseCount(itemType) {
 	if (itemType === 'ORANGE') {
 		if (orangeCount > 0) {
 			oranges = --orangeCount;
-			var  orangesText = ' ' + oranges + ' ';
-			$('#orangeItemCount').text(orangesText);
+			$('#orangeItemCount').text(oranges);
 		}
 	}
 	if (itemType === 'APPLE') {
 		if (applesCount > 0) {
 			apples = --applesCount;
-			var  appleText = ' '+apples+' ';
-			$('#appleItemCount').text(appleText);
+			$('#appleItemCount').text(apples);
 		}
 	}
 	cartCountUpdate(apples, oranges);

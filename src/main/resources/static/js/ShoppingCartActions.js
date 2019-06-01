@@ -90,7 +90,7 @@ function applyDiscounts() {
 		}; 
 		
 		var totalPrice = data.checkoutPrice ;
-		$('#totalPrice').text(totalPrice);
+		$('#totalPrice').text('$ '+totalPrice);
 
 	});
 }
