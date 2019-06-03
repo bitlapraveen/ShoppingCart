@@ -81,6 +81,8 @@ var hideDialog = function(id) {
 	  $('#appleItemCount').text('0');
 	  $('#orangeItemCount').text('0');
 	  $('#cartCount').text('0');
+	  oranges = 0;
+	  apples = 0;
 	  $('#pageBackButton').click();
 };
 	
